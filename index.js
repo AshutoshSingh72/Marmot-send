@@ -18,14 +18,14 @@ async function connect(){
       params: {
         requestAssets: [
           {
-            assetId: 'nft1xqertsxveqgs23gh99d66sz28tnd6uv6ewqwas03rfulp56wel4qhscljk',
+            assetId: document.getElementById("request").value,
             amount: 1
           }
         ],
         offerAssets: [
           {
-            assetId: '',
-            amount: 1000000000000
+            assetId: document.getElementById("amount").value,
+            amount: document.getElementById("offer").value,
           }
         ]
       }
