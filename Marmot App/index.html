@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Offer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+    <button id="connect" class="button-45" role="button" style="float: right;" onclick="connect()">Connect Goby</button>
+    <head><h1 style="font-family: cursive;">Marmot App</h1></head>
+    <br>
+    <br>
+    <br>
+    <button id="connect" class="button-45" role="button" style="  float: left;" onclick="location.href = 'index.html';">Create NFT & Token  offer</button>
+    <button id="connect" class="button-45" role="button" style="  float: right;"  onclick="location.href = 'Takeoffer.html';">Take NFT  & Token  offer</button>
+    <br>
+    <br>
+    <br>
+    <h1>
+      Steps
+    </h1>
+    <h3 style="text-align: left;">
+      1 For Chia (XCH) Leave the <br> input field Blank and multiply the
+      amount by 1000000000000
+       (multiply x 1000000000000)
+       <br>
+      2 For NFTs Entre NFT id from Goby wallet
+       by just clicking on it there you will see <br> by default  Enter 1 as Amount
+
+<br>
+      3 For Chia Asset Tokens Enter Asset id from Goby wallet and then multiply the amount by (1000)
+    </h3>
+    <h1 style="text-align: center;">You Request</h1>
+    <input type="text" placeholder="NFT Id or Asset id Blank for chia" onblur="getVal()" id="request" style="display: block;
+    margin : 0 auto; border-radius: 18px;
+    background: rgb(246, 255, 246);
+    padding: 20px; 
+    width: 200px;
+    height: 15px;    " onblur="getVal()">
+    <input type="text" placeholder="Amount" onblur="getVal()" id="amount" style="display: block;
+    margin : 0 auto; margin : 0 auto; border-radius: 18px;
+    background: rgb(246, 255, 246);
+    padding: 20px; 
+    width: 200px;
+    height: 15px;" onblur="getVal()">
+    <h1 style="text-align: center;">You Offer</h1>
+    <input type="text" placeholder="NFT Id or Asset id Blank for chia" onblur="getVal()" id="offer" style="display: block;
+    margin : 0 auto; margin : 0 auto; border-radius: 18px;
+    background: rgb(246, 255, 246);
+    padding: 20px; 
+    width: 200px;
+    height: 15px;" onblur="getVal()">
+    <input type="text" placeholder="Amount" onblur="getVal()" id="amount2" style="display: block;
+    margin : 0 auto; margin : 0 auto; border-radius: 18px;
+    background: rgb(246, 255, 246);
+    padding: 20px; 
+    width: 200px;
+    height: 15px;" onblur="getVal()">
+    <br>
+    <button onclick="createoffer()" style="display: block;
+    margin : 0 auto;  " class="button-45">Create Offer with Goby</button>
+    <h5>term & conditions </h5>
+    <h5>while using the App you agree that you're responsible for any issue happen to you</h5>
+
+  </body>
+</html>

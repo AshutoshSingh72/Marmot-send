@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Take offer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+    <button id="connect" class="button-45" role="button" style="float: right;" onclick="connect()">Connect Goby</button>
+    <head><h1 style="font-family: cursive;">Marmot App</h1></head>
+    <br>
+    <br>
+    <br>
+    <button id="connect" class="button-45" role="button" style=" float: left;" onclick="location.href = 'index.html';">Create NFT & Token  offer</button>
+    <button id="connect" class="button-45" role="button" style=" float: right;" onclick="location.href = 'Takeoffer.html';">Take NFT  & Token  offer</button>
+    <br>
+    <br>
+    <br>
+    <input type="text" placeholder="Paste offer" onblur="getVal()" style="border-radius: 18px;
+    background: rgb(245, 255, 241);
+    padding: 50px; 
+    width: 500px;
+    height: 50px; display: block;
+             margin : 0 auto;  ">
+             <br>
+    <button onclick="Takeoffer()" style="display: block;
+    margin : 0 auto;" class="button-45">Take Offer With Goby</button>
+    <script>
+        function Takeoffer(){
+         window.chia.request({method: 'takeOffer', params: {offer: document.querySelector('input').value,}})
+        }
+    </script>
+  </body>
+</html>
